@@ -1,12 +1,12 @@
-require 'rspec/core'
+require 'rspec'
 require 'prime'
 
 describe Prime do
   it "returns true when a prime number is passed" do
-    calculator = StringCalc.new
+    number = Prime.new
 
-    result = calculator.add("")
+    result = number.is_prime?(3)
 
-    expect(result).to eq 0
+    expect(result).to eq true
   end
 end
